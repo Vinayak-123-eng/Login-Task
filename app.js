@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://admin-vinayak:WsUMgGzGLW75QVuR@cluster0.xgcqw.mo
 
 
 const users= new mongoose.Schema({
-	username:{
+username:{
 	type:String,
 	requied: true,
    unique: true,
@@ -94,7 +94,7 @@ app.post("/login",function(req,res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+port = 8000;
 }
 
 app.listen(port, function(){
