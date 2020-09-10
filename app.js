@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-mongoose.connect("mongodb+srv://admin-vinayak:WsUMgGzGLW75QVuR@cluster0.xgcqw.mongodb.net/Login", { useNewUrlParser: true ,useUnifiedTopology: true });
-
+mongoose.connect(MongoURI, { useNewUrlParser: true ,useUnifiedTopology: true });
 
 const users= new mongoose.Schema({
 username:{
